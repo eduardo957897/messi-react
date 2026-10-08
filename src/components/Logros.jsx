@@ -5,6 +5,7 @@ const logros = [
   { numero: "02", titulo: "Balón de Oro", texto: "Ocho veces ganador del premio al mejor jugador del mundo.", etiquetas: ["Individual", "x8"] },
   { numero: "03", titulo: "Champions League", texto: "Cuatro títulos con el FC Barcelona.", etiquetas: ["Barcelona", "x4"] },
   { numero: "04", titulo: "Copa América", texto: "Campeón con Argentina en 2021 y 2024.", etiquetas: ["Selección", "2021", "2024"] },
+  { numero: "05", titulo: "Finalissima", texto: "Campeón con Argentina ante Italia en 2022.", etiquetas: ["Selección", "2022"] },
 ];
 
 function Logros() {
@@ -33,3 +34,4 @@ function Logros() {
 }
 
 export default Logros;
+
