@@ -30,3 +30,19 @@ footer {
   background: #0b2a4a;
   color: white;
 }
+
+.botones { text-align: center; margin-bottom: 20px; }
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #1f5fa0;
+  color: white;
+  transition: transform 0.2s, background 0.2s;
+}
+.btn:hover { background: #75aadb; transform: translateY(-2px); }
+section { transition: transform 0.2s; }
+section:hover { transform: translateY(-3px); }
