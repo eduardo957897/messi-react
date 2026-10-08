@@ -1,29 +1,23 @@
-﻿import { useState } from "react";
-import "./App.css";
-import Header from "./components/Header";
-import DatosPersonales from "./components/DatosPersonales";
-import Biografia from "./components/Biografia";
+﻿import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Estadisticas from "./components/Estadisticas";
+import Perfil from "./components/Perfil";
+import Trayectoria from "./components/Trayectoria";
 import Logros from "./components/Logros";
 import Galeria from "./components/Galeria";
-import LikeButton from "./components/LikeButton";
 import Footer from "./components/Footer";
 
 function App() {
-  const [verLogros, setVerLogros] = useState(true);
-
   return (
     <>
-      <Header />
+      <Navbar />
+      <Hero />
+      <Estadisticas />
       <main>
-        <LikeButton />
-        <DatosPersonales />
-        <Biografia />
-        <div className="botones">
-          <button className="btn" onClick={() => setVerLogros(!verLogros)}>
-            {verLogros ? "Ocultar logros" : "Mostrar logros"}
-          </button>
-        </div>
-        {verLogros && <Logros />}
+        <Perfil />
+        <Trayectoria />
+        <Logros />
         <Galeria />
       </main>
       <Footer />
